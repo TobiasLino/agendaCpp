@@ -7,18 +7,16 @@
 
 #include <string>
 
-#define DDDLEN 6
-#define NUMBERLEN 9
+#define NUMBERLEN 17
 
 class Phone {
  public:
   Phone();
-  Phone(std::string ddd, std::string number);
-  void set_phone(std::string ddd, std::string number);
+  Phone(std::string number);
+  void set_phone(std::string number);
   char* get_phone();
 
  private:
-  char ddd_[DDDLEN + 1];
   char number_[NUMBERLEN + 1];
 };
 

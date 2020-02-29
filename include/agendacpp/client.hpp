@@ -3,16 +3,44 @@
 #ifndef INCLUDE_AGENDACPP_CLIENT_HPP_
 #define INCLUDE_AGENDACPP_CLIENT_HPP_
 
+#include <iostream>
+#include <iomanip>
+
 #include "phone.hpp"
+
+#define NAMELEN 30
+#define BIRTHLEN 10
+#define GENDERLEN 1
 
 class Client {
  public:
+  Client();
+  Client(std::string name);
+  virtual ~Client();
+
+  void set_name(std::string name);
+  void set_age(int age);
+  void set_birth(std::string birth);
+  void set_gender(std::string gender);
+  void set_phone(Phone *tel);
+
+  char* get_name();
+  int get_age();
+  char* get_birth();
+  char* get_gender();
+  Phone* get_phone();
+  char* get_phone_number();
+
+  void Print();
+
+  bool is_equal(Client client);
 
  private:
-  std::string name_;
+  char name_[NAMELEN + 1];
   unsigned age_;
-  std::string birth_;
-  std::string gender_;
+  char birth_[BIRTHLEN + 1];
+  char gender_[GENDERLEN + 1];
+  Phone *tel_;
 };
 
 
