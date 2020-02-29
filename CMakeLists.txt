@@ -3,4 +3,8 @@ project(agendaCpp)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(agendaCpp main.cpp)
+add_executable(
+        agendaCpp tests/test.cpp
+        include/agendacpp/client.cpp
+        include/agendacpp/phone.cpp
+)

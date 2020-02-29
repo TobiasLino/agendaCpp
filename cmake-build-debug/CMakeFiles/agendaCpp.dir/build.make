@@ -57,30 +57,60 @@ include CMakeFiles/agendaCpp.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/agendaCpp.dir/flags.make
 
-CMakeFiles/agendaCpp.dir/main.cpp.o: CMakeFiles/agendaCpp.dir/flags.make
-CMakeFiles/agendaCpp.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/agendaCpp.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/agendaCpp.dir/main.cpp.o -c /home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/main.cpp
+CMakeFiles/agendaCpp.dir/tests/test.cpp.o: CMakeFiles/agendaCpp.dir/flags.make
+CMakeFiles/agendaCpp.dir/tests/test.cpp.o: ../tests/test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/agendaCpp.dir/tests/test.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/agendaCpp.dir/tests/test.cpp.o -c /home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/tests/test.cpp
 
-CMakeFiles/agendaCpp.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agendaCpp.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/main.cpp > CMakeFiles/agendaCpp.dir/main.cpp.i
+CMakeFiles/agendaCpp.dir/tests/test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agendaCpp.dir/tests/test.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/tests/test.cpp > CMakeFiles/agendaCpp.dir/tests/test.cpp.i
 
-CMakeFiles/agendaCpp.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agendaCpp.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/main.cpp -o CMakeFiles/agendaCpp.dir/main.cpp.s
+CMakeFiles/agendaCpp.dir/tests/test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agendaCpp.dir/tests/test.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/tests/test.cpp -o CMakeFiles/agendaCpp.dir/tests/test.cpp.s
+
+CMakeFiles/agendaCpp.dir/include/agendacpp/client.cpp.o: CMakeFiles/agendaCpp.dir/flags.make
+CMakeFiles/agendaCpp.dir/include/agendacpp/client.cpp.o: ../include/agendacpp/client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/agendaCpp.dir/include/agendacpp/client.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/agendaCpp.dir/include/agendacpp/client.cpp.o -c /home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/include/agendacpp/client.cpp
+
+CMakeFiles/agendaCpp.dir/include/agendacpp/client.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agendaCpp.dir/include/agendacpp/client.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/include/agendacpp/client.cpp > CMakeFiles/agendaCpp.dir/include/agendacpp/client.cpp.i
+
+CMakeFiles/agendaCpp.dir/include/agendacpp/client.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agendaCpp.dir/include/agendacpp/client.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/include/agendacpp/client.cpp -o CMakeFiles/agendaCpp.dir/include/agendacpp/client.cpp.s
+
+CMakeFiles/agendaCpp.dir/include/agendacpp/phone.cpp.o: CMakeFiles/agendaCpp.dir/flags.make
+CMakeFiles/agendaCpp.dir/include/agendacpp/phone.cpp.o: ../include/agendacpp/phone.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/agendaCpp.dir/include/agendacpp/phone.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/agendaCpp.dir/include/agendacpp/phone.cpp.o -c /home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/include/agendacpp/phone.cpp
+
+CMakeFiles/agendaCpp.dir/include/agendacpp/phone.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agendaCpp.dir/include/agendacpp/phone.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/include/agendacpp/phone.cpp > CMakeFiles/agendaCpp.dir/include/agendacpp/phone.cpp.i
+
+CMakeFiles/agendaCpp.dir/include/agendacpp/phone.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agendaCpp.dir/include/agendacpp/phone.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/include/agendacpp/phone.cpp -o CMakeFiles/agendaCpp.dir/include/agendacpp/phone.cpp.s
 
 # Object files for target agendaCpp
 agendaCpp_OBJECTS = \
-"CMakeFiles/agendaCpp.dir/main.cpp.o"
+"CMakeFiles/agendaCpp.dir/tests/test.cpp.o" \
+"CMakeFiles/agendaCpp.dir/include/agendacpp/client.cpp.o" \
+"CMakeFiles/agendaCpp.dir/include/agendacpp/phone.cpp.o"
 
 # External object files for target agendaCpp
 agendaCpp_EXTERNAL_OBJECTS =
 
-agendaCpp: CMakeFiles/agendaCpp.dir/main.cpp.o
+agendaCpp: CMakeFiles/agendaCpp.dir/tests/test.cpp.o
+agendaCpp: CMakeFiles/agendaCpp.dir/include/agendacpp/client.cpp.o
+agendaCpp: CMakeFiles/agendaCpp.dir/include/agendacpp/phone.cpp.o
 agendaCpp: CMakeFiles/agendaCpp.dir/build.make
 agendaCpp: CMakeFiles/agendaCpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable agendaCpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable agendaCpp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/agendaCpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

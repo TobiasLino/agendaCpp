@@ -123,32 +123,86 @@ agendaCpp/fast:
 	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/build
 .PHONY : agendaCpp/fast
 
-main.o: main.cpp.o
+include/agendacpp/client.o: include/agendacpp/client.cpp.o
 
-.PHONY : main.o
+.PHONY : include/agendacpp/client.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/main.cpp.o
-.PHONY : main.cpp.o
+include/agendacpp/client.cpp.o:
+	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/include/agendacpp/client.cpp.o
+.PHONY : include/agendacpp/client.cpp.o
 
-main.i: main.cpp.i
+include/agendacpp/client.i: include/agendacpp/client.cpp.i
 
-.PHONY : main.i
+.PHONY : include/agendacpp/client.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/main.cpp.i
-.PHONY : main.cpp.i
+include/agendacpp/client.cpp.i:
+	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/include/agendacpp/client.cpp.i
+.PHONY : include/agendacpp/client.cpp.i
 
-main.s: main.cpp.s
+include/agendacpp/client.s: include/agendacpp/client.cpp.s
 
-.PHONY : main.s
+.PHONY : include/agendacpp/client.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/main.cpp.s
-.PHONY : main.cpp.s
+include/agendacpp/client.cpp.s:
+	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/include/agendacpp/client.cpp.s
+.PHONY : include/agendacpp/client.cpp.s
+
+include/agendacpp/phone.o: include/agendacpp/phone.cpp.o
+
+.PHONY : include/agendacpp/phone.o
+
+# target to build an object file
+include/agendacpp/phone.cpp.o:
+	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/include/agendacpp/phone.cpp.o
+.PHONY : include/agendacpp/phone.cpp.o
+
+include/agendacpp/phone.i: include/agendacpp/phone.cpp.i
+
+.PHONY : include/agendacpp/phone.i
+
+# target to preprocess a source file
+include/agendacpp/phone.cpp.i:
+	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/include/agendacpp/phone.cpp.i
+.PHONY : include/agendacpp/phone.cpp.i
+
+include/agendacpp/phone.s: include/agendacpp/phone.cpp.s
+
+.PHONY : include/agendacpp/phone.s
+
+# target to generate assembly for a file
+include/agendacpp/phone.cpp.s:
+	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/include/agendacpp/phone.cpp.s
+.PHONY : include/agendacpp/phone.cpp.s
+
+tests/test.o: tests/test.cpp.o
+
+.PHONY : tests/test.o
+
+# target to build an object file
+tests/test.cpp.o:
+	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/tests/test.cpp.o
+.PHONY : tests/test.cpp.o
+
+tests/test.i: tests/test.cpp.i
+
+.PHONY : tests/test.i
+
+# target to preprocess a source file
+tests/test.cpp.i:
+	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/tests/test.cpp.i
+.PHONY : tests/test.cpp.i
+
+tests/test.s: tests/test.cpp.s
+
+.PHONY : tests/test.s
+
+# target to generate assembly for a file
+tests/test.cpp.s:
+	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/tests/test.cpp.s
+.PHONY : tests/test.cpp.s
 
 # Help Target
 help:
@@ -159,9 +213,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... agendaCpp"
 	@echo "... edit_cache"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... include/agendacpp/client.o"
+	@echo "... include/agendacpp/client.i"
+	@echo "... include/agendacpp/client.s"
+	@echo "... include/agendacpp/phone.o"
+	@echo "... include/agendacpp/phone.i"
+	@echo "... include/agendacpp/phone.s"
+	@echo "... tests/test.o"
+	@echo "... tests/test.i"
+	@echo "... tests/test.s"
 .PHONY : help
 
 
