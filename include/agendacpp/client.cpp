@@ -13,7 +13,10 @@ Client::Client() {
 }
 
 Client::Client(std::string name) {
-  strcpy(this->name_, name.c_str());
+  int i = snprintf(this->name_, NAMELEN+1, "%s", name.c_str());
+  if (i < 0 || i > NAMELEN+1) {
+    err.Error("Writing to name");
+  }
   this->age_ = 0;
   memset(this->birth_, '-', BIRTHLEN);
   memset(this->gender_, '-', GENDERLEN);
@@ -25,7 +28,6 @@ Client::~Client() {
 }
 
 void Client::set_name(std::string name) {
-  // strcpy(this->name_, name.c_str());
   int i = snprintf(this->name_, NAMELEN+1, "%s", name.c_str());
   if (i < 0 || i > NAMELEN+1) {
     err.Error("Writing to name");
@@ -41,7 +43,10 @@ void Client::set_gender(std::string gender) {
 }
 
 void Client::set_birth(std::string birth) {
-  strcpy(this->birth_, birth.c_str());
+  int i = snprintf(this->birth_, NAMELEN+1, "%s", birth.c_str());
+  if (i < 0 || i > NAMELEN+1) {
+    err.Error("Writing to name");
+  }
 }
 
 void Client::set_age(int age) {
