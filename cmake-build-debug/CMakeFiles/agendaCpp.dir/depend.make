@@ -3,7 +3,11 @@
 
 CMakeFiles/agendaCpp.dir/include/agendacpp/client.cpp.o: ../include/agendacpp/client.cpp
 CMakeFiles/agendaCpp.dir/include/agendacpp/client.cpp.o: ../include/agendacpp/client.hpp
+CMakeFiles/agendaCpp.dir/include/agendacpp/client.cpp.o: ../include/agendacpp/errors.hpp
 CMakeFiles/agendaCpp.dir/include/agendacpp/client.cpp.o: ../include/agendacpp/phone.hpp
+
+CMakeFiles/agendaCpp.dir/include/agendacpp/errors.cpp.o: ../include/agendacpp/errors.cpp
+CMakeFiles/agendaCpp.dir/include/agendacpp/errors.cpp.o: ../include/agendacpp/errors.hpp
 
 CMakeFiles/agendaCpp.dir/include/agendacpp/phone.cpp.o: ../include/agendacpp/phone.cpp
 CMakeFiles/agendaCpp.dir/include/agendacpp/phone.cpp.o: ../include/agendacpp/phone.hpp

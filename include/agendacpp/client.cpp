@@ -1,6 +1,8 @@
 // Copyright 2020 Tobias
 
 #include "client.hpp"
+#include "errors.hpp"
+Errors err;
 
 Client::Client() {
   memset(this->name_, '-', NAMELEN);
@@ -23,7 +25,11 @@ Client::~Client() {
 }
 
 void Client::set_name(std::string name) {
-  strcpy(this->name_, name.c_str());
+  // strcpy(this->name_, name.c_str());
+  int i = snprintf(this->name_, NAMELEN+1, "%s", name.c_str());
+  if (i < 0 || i > NAMELEN+1) {
+    err.Error("Writing to name");
+  }
 }
 
 void Client::set_phone(Phone *tel) {

@@ -7,4 +7,5 @@ add_executable(
         agendaCpp tests/test.cpp
         include/agendacpp/client.cpp
         include/agendacpp/phone.cpp
+        include/agendacpp/errors.cpp
 )

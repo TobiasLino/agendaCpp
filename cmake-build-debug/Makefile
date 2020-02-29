@@ -150,6 +150,33 @@ include/agendacpp/client.cpp.s:
 	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/include/agendacpp/client.cpp.s
 .PHONY : include/agendacpp/client.cpp.s
 
+include/agendacpp/errors.o: include/agendacpp/errors.cpp.o
+
+.PHONY : include/agendacpp/errors.o
+
+# target to build an object file
+include/agendacpp/errors.cpp.o:
+	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/include/agendacpp/errors.cpp.o
+.PHONY : include/agendacpp/errors.cpp.o
+
+include/agendacpp/errors.i: include/agendacpp/errors.cpp.i
+
+.PHONY : include/agendacpp/errors.i
+
+# target to preprocess a source file
+include/agendacpp/errors.cpp.i:
+	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/include/agendacpp/errors.cpp.i
+.PHONY : include/agendacpp/errors.cpp.i
+
+include/agendacpp/errors.s: include/agendacpp/errors.cpp.s
+
+.PHONY : include/agendacpp/errors.s
+
+# target to generate assembly for a file
+include/agendacpp/errors.cpp.s:
+	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/include/agendacpp/errors.cpp.s
+.PHONY : include/agendacpp/errors.cpp.s
+
 include/agendacpp/phone.o: include/agendacpp/phone.cpp.o
 
 .PHONY : include/agendacpp/phone.o
@@ -216,6 +243,9 @@ help:
 	@echo "... include/agendacpp/client.o"
 	@echo "... include/agendacpp/client.i"
 	@echo "... include/agendacpp/client.s"
+	@echo "... include/agendacpp/errors.o"
+	@echo "... include/agendacpp/errors.i"
+	@echo "... include/agendacpp/errors.s"
 	@echo "... include/agendacpp/phone.o"
 	@echo "... include/agendacpp/phone.i"
 	@echo "... include/agendacpp/phone.s"

@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/include/agendacpp/client.cpp" "/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/CMakeFiles/agendaCpp.dir/include/agendacpp/client.cpp.o"
+  "/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/include/agendacpp/errors.cpp" "/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/CMakeFiles/agendaCpp.dir/include/agendacpp/errors.cpp.o"
   "/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/include/agendacpp/phone.cpp" "/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/CMakeFiles/agendaCpp.dir/include/agendacpp/phone.cpp.o"
   "/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/tests/test.cpp" "/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/CMakeFiles/agendaCpp.dir/tests/test.cpp.o"
   )
