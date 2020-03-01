@@ -25,7 +25,23 @@ void Agenda::Add(Client *cl) {
 
 void Agenda::Remove(const char *name) {}
 
-void Agenda::Sort() {}
+void Agenda::Sort() {
+  Client *atual, *next;
+  std::deque<Client*>::iterator j;
+  int k;
+  for (int i = 0; i < ALPHABETLEN+1; ++i) {
+    for (j = agenda_[i]->begin(), k = 0;
+          j != agenda_[i]->end() && k < agenda_[i]->size();
+          ++j, ++k) {
+      atual = agenda_[i]->at(k);
+      next = agenda_[i]->at(k+1);
+      if (strcmp(atual->get_name(),next->get_name()) > 0) {
+        agenda_[i]->insert(j, next);
+        agenda_[i]->erase(j+1);
+      }
+    }
+  }
+}
 
 int Agenda::Size() {
   int tamanho = 0;
@@ -41,6 +57,28 @@ void Agenda::Print() {
     for (int j = 0; j < agenda_[i]->size(); ++j) {
       tmp = agenda_[i]->at(j);
       tmp->Print();
+    }
+  }
+}
+
+void Agenda::PrintMale() {
+  Client *tmp;
+  for (int i = 0; i < ALPHABETLEN+1; ++i) {
+    for (int j = 0; j < agenda_[i]->size(); ++j) {
+      tmp = agenda_[i]->at(j);
+      if (tmp->get_gender()[0] == 'M')
+        tmp->Print();
+    }
+  }
+}
+
+void Agenda::PrintFemale() {
+  Client *tmp;
+  for (int i = 0; i < ALPHABETLEN+1; ++i) {
+    for (int j = 0; j < agenda_[i]->size(); ++j) {
+      tmp = agenda_[i]->at(j);
+      if (tmp->get_gender()[0] == 'F')
+        tmp->Print();
     }
   }
 }
