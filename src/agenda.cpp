@@ -6,7 +6,7 @@
 
 Agenda::Agenda() {
   for (int i = 0; i < ALPHABETLEN+1; ++i) {
-    agenda_[i] = new std::deque<Client*>;
+    agenda_[i] = new std::list<Client*>;
   }
 }
 
@@ -25,21 +25,24 @@ void Agenda::Add(Client *cl) {
 
 void Agenda::Remove(const char *name) {}
 
+// Comp
+bool CompName(Client* first, Client *second) {
+  std::string f = first->get_name();
+  std::string s = second->get_name();
+  unsigned int i = 0;
+  while ((i < f.length()) && (i < s.length())) {
+    if (tolower(f[i]) < tolower(s[i])) return true;
+    else if (tolower(f[i]) > tolower(s[i])) return false;
+    ++i;
+  }
+  return ( f.length() < s.length());
+}
+
 void Agenda::Sort() {
-  Client *atual, *next;
-  std::deque<Client*>::iterator j;
-  int k;
+  std::list<Client*>::iterator ref;
   for (int i = 0; i < ALPHABETLEN+1; ++i) {
-    for (j = agenda_[i]->begin(), k = 0;
-          j != agenda_[i]->end() && k < agenda_[i]->size();
-          ++j, ++k) {
-      atual = agenda_[i]->at(k);
-      next = agenda_[i]->at(k+1);
-      if (strcmp(atual->get_name(),next->get_name()) > 0) {
-        agenda_[i]->insert(j, next);
-        agenda_[i]->erase(j+1);
-      }
-    }
+    for (ref = agenda_[i]->begin(); ref != agenda_[i]->end(); ++ref)
+      agenda_[i]->sort(CompName);
   }
 }
 
@@ -52,38 +55,36 @@ int Agenda::Size() {
 }
 
 void Agenda::Print() {
-  Client *tmp;
+  std::list<Client*>::iterator ref;
   for (int i = 0; i < ALPHABETLEN+1; ++i) {
-    for (int j = 0; j < agenda_[i]->size(); ++j) {
-      tmp = agenda_[i]->at(j);
-      tmp->Print();
+    for (ref = agenda_[i]->begin(); ref != agenda_[i]->end(); ++ref) {
+      (*ref)->Print();
     }
   }
 }
 
 void Agenda::PrintMale() {
-  Client *tmp;
+  std::list<Client*>::iterator ref;
   for (int i = 0; i < ALPHABETLEN+1; ++i) {
-    for (int j = 0; j < agenda_[i]->size(); ++j) {
-      tmp = agenda_[i]->at(j);
-      if (tmp->get_gender()[0] == 'M')
-        tmp->Print();
+    for (ref = agenda_[i]->begin(); ref != agenda_[i]->end(); ++ref) {
+      if ((*ref)->get_gender()[0] == 'M')
+        (*ref)->Print();
     }
   }
 }
 
 void Agenda::PrintFemale() {
-  Client *tmp;
+  std::list<Client*>::iterator ref;
   for (int i = 0; i < ALPHABETLEN+1; ++i) {
-    for (int j = 0; j < agenda_[i]->size(); ++j) {
-      tmp = agenda_[i]->at(j);
-      if (tmp->get_gender()[0] == 'F')
-        tmp->Print();
+    for (ref = agenda_[i]->begin(); ref != agenda_[i]->end(); ++ref) {
+      if ((*ref)->get_gender()[0] == 'F')
+      (*ref)->Print();
     }
   }
 }
 
-bool Agenda::Contains(Client cl) {}
+bool Agenda::Contains(Client cl) {
+}
 
 bool Agenda::Contains(const char *name) {}
 

@@ -26,6 +26,24 @@ int main(void) {
   Phone *tel2 = new Phone("12 996262526");
   cli2->set_phone(tel2);
 
+  Client *cli3 = new Client;
+  cli3->set_name("Ad Paula");
+  cli3->set_age(37);
+  cli3->set_birth("20/01/1982");
+  cli3->set_gender("feminino");
+
+  Phone *tel3 = new Phone("12 996262526");
+  cli3->set_phone(tel3);
+
+  Client *cli4 = new Client;
+  cli4->set_name("Ac Paula");
+  cli4->set_age(37);
+  cli4->set_birth("20/01/1982");
+  cli4->set_gender("feminino");
+
+  Phone *tel4 = new Phone("12 996262526");
+  cli4->set_phone(tel4);
+
 
   /*
   Menu m;
@@ -38,6 +56,8 @@ int main(void) {
 
   ag->Add(cli);
   ag->Add(cli2);
+  ag->Add(cli3);
+  ag->Add(cli4);
 
   std::cout << "Antes de ordenar:\n";
   ag->Print();

@@ -23,6 +23,14 @@ Client::Client(std::string name) {
   this->tel_ = new Phone;
 }
 
+Client::Client(Client* cl) {
+  this->set_name(cl->get_name());
+  this->set_age(cl->get_age());
+  this->set_gender(cl->get_gender());
+  this->set_birth(cl->get_birth());
+  this->set_phone(cl->get_phone());
+}
+
 Client::~Client() {
   delete [] tel_;
 }

@@ -3,7 +3,8 @@
 #ifndef SRC_AGENDA_HPP_
 #define SRC_AGENDA_HPP_
 
-#include <deque>
+#include <list>
+#include <algorithm>
 
 #include "../include/agendacpp/client.hpp"
 
@@ -27,7 +28,7 @@ class Agenda {
   int GetIndex(const char ch);
 
  private:
-  std::deque<Client*> *agenda_[ALPHABETLEN + 1];
+  std::list<Client*> *agenda_[ALPHABETLEN + 1];
 };
 
 

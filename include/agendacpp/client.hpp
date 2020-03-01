@@ -18,6 +18,7 @@ class Client {
  public:
   Client();
   Client(std::string name);
+  Client(Client* cl);
   virtual ~Client();
 
   void set_name(std::string name);
