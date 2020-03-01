@@ -19,13 +19,13 @@ class Agenda {
   void Add(Client *cl);
   void Remove(const char *name);
   void Sort();
+  void MakeUnique();
   int Size();
   void Print();
   void PrintMale();
   void PrintFemale();
-  bool Contains(Client cl);
-  bool Contains(const char *name);
-  int GetIndex(const char ch);
+  bool Contains(Client *cl);
+  static int GetIndex(const char ch);
 
  private:
   std::list<Client*> *agenda_[ALPHABETLEN + 1];

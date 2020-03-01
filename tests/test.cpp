@@ -45,6 +45,14 @@ int main(void) {
   cli4->set_phone(tel4);
 
 
+  Client *cli5 = new Client;
+  cli5->set_name("Ab Paula");
+  cli5->set_age(37);
+  cli5->set_birth("20/01/1982");
+  cli5->set_gender("feminino");
+
+  Phone *tel5 = new Phone("12 996262526");
+  cli5->set_phone(tel5);
   /*
   Menu m;
   m.ClientTableTitle();
@@ -58,6 +66,7 @@ int main(void) {
   ag->Add(cli2);
   ag->Add(cli3);
   ag->Add(cli4);
+  ag->Add(cli5);
 
   std::cout << "Antes de ordenar:\n";
   ag->Print();
@@ -65,6 +74,19 @@ int main(void) {
   ag->Sort();
   std::cout << "Depois de ordenar:\n";
   ag->Print();
+
+  ag->MakeUnique();
+  ag->Remove(cli->get_name());
+
+  std::cout << "Depois:\n";
+  ag->Print();
+
+  ag->Remove(cli2->get_name());
+
+  std::cout << "Depois:\n";
+  ag->Print();
+
+  ag->Remove(cli2->get_name());
 
   return 0;
 }
