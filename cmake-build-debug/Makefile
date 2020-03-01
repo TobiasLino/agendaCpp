@@ -204,6 +204,33 @@ include/agendacpp/phone.cpp.s:
 	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/include/agendacpp/phone.cpp.s
 .PHONY : include/agendacpp/phone.cpp.s
 
+src/agenda.o: src/agenda.cpp.o
+
+.PHONY : src/agenda.o
+
+# target to build an object file
+src/agenda.cpp.o:
+	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/src/agenda.cpp.o
+.PHONY : src/agenda.cpp.o
+
+src/agenda.i: src/agenda.cpp.i
+
+.PHONY : src/agenda.i
+
+# target to preprocess a source file
+src/agenda.cpp.i:
+	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/src/agenda.cpp.i
+.PHONY : src/agenda.cpp.i
+
+src/agenda.s: src/agenda.cpp.s
+
+.PHONY : src/agenda.s
+
+# target to generate assembly for a file
+src/agenda.cpp.s:
+	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/src/agenda.cpp.s
+.PHONY : src/agenda.cpp.s
+
 src/menu.o: src/menu.cpp.o
 
 .PHONY : src/menu.o
@@ -276,6 +303,9 @@ help:
 	@echo "... include/agendacpp/phone.o"
 	@echo "... include/agendacpp/phone.i"
 	@echo "... include/agendacpp/phone.s"
+	@echo "... src/agenda.o"
+	@echo "... src/agenda.i"
+	@echo "... src/agenda.s"
 	@echo "... src/menu.o"
 	@echo "... src/menu.i"
 	@echo "... src/menu.s"

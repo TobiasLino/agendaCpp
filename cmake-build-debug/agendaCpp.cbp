@@ -102,6 +102,12 @@
 		<Unit filename="/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/include/agendacpp/phone.hpp">
 			<Option target="agendaCpp"/>
 		</Unit>
+		<Unit filename="/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/src/agenda.cpp">
+			<Option target="agendaCpp"/>
+		</Unit>
+		<Unit filename="/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/src/agenda.hpp">
+			<Option target="agendaCpp"/>
+		</Unit>
 		<Unit filename="/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/src/menu.cpp">
 			<Option target="agendaCpp"/>
 		</Unit>

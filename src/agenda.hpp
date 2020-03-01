@@ -3,15 +3,31 @@
 #ifndef SRC_AGENDA_HPP_
 #define SRC_AGENDA_HPP_
 
-#include <list>
+#include <deque>
 
 #include "../include/agendacpp/client.hpp"
 
 #define ALPHABETLEN 26
+#define CHARVALUE 65
 
 class Agenda {
+ public:
+  Agenda();
+  virtual ~Agenda();
+  Client* FindIt(const char *name);
+  void Add(Client *cl);
+  void Remove(const char *name);
+  void Sort();
+  int Size();
+  void Print();
+  void PrintMale();
+  void PrintFemale();
+  bool Contains(Client cl);
+  bool Contains(const char *name);
+  int GetIndex(const char ch);
+
  private:
-  std::list<Client> agenda_[ALPHABETLEN + 1];
+  std::deque<Client*> *agenda_[ALPHABETLEN + 1];
 };
 
 

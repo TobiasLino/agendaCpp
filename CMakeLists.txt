@@ -9,4 +9,5 @@ add_executable(
         include/agendacpp/phone.cpp
         include/agendacpp/errors.cpp
         src/menu.cpp
+        src/agenda.cpp
 )

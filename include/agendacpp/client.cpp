@@ -39,7 +39,7 @@ void Client::set_phone(Phone *tel) {
 }
 
 void Client::set_gender(std::string gender) {
-  this->gender_[0] = gender[0];
+  this->gender_[0] = toupper(gender[0]);
 }
 
 void Client::set_birth(const char *birth) {

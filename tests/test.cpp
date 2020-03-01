@@ -3,24 +3,25 @@
 #include "../include/agendacpp/phone.hpp"
 #include "../include/agendacpp/client.hpp"
 #include "../src/menu.hpp"
+#include "../src/agenda.hpp"
 
 int main(void) {
   Phone *tel = new Phone;
 
   tel->set_phone("12 996829353");
 
-  Client cli;
-  cli.set_name("Tobias");
-  cli.set_age(18);
-  cli.set_birth("24/10/2001");
-  cli.set_gender("Masculino");
-  cli.set_phone(tel);
+  Client *cli = new Client;
+  cli->set_name("Tobias");
+  cli->set_age(18);
+  cli->set_birth("24/10/2001");
+  cli->set_gender("masculino");
+  cli->set_phone(tel);
 
   Client *cli2 = new Client;
   cli2->set_name("Ana Paula da Silva Lino");
   cli2->set_age(37);
   cli2->set_birth("20/01/1982");
-  cli2->set_gender("Feminino");
+  cli2->set_gender("feminino");
 
   Phone *tel2 = new Phone("12 996262526");
   cli2->set_phone(tel2);
@@ -28,8 +29,18 @@ int main(void) {
 
   Menu m;
   m.ClientTableTitle();
-  cli.Print();
+  /*
+  cli->Print();
   cli2->Print();
+   */
+
+  Agenda *ag = new Agenda;
+
+  ag->Add(cli);
+  ag->Add(cli2);
+
+  ag->Print();
+
   return 0;
 }
 
