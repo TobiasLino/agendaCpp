@@ -7,6 +7,10 @@
 
 #include <string>
 
+#include "errors.hpp"
+
+extern Errors *err;
+
 #define NUMBERLEN 17
 
 class Phone {

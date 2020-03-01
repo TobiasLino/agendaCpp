@@ -1,8 +1,8 @@
 // Copyright 2020 Tobias
 
 #include "client.hpp"
-#include "errors.hpp"
-Errors err;
+
+// Errors *err = new Errors;
 
 Client::Client() {
   memset(this->name_, '-', NAMELEN);
@@ -15,7 +15,7 @@ Client::Client() {
 Client::Client(std::string name) {
   int i = snprintf(this->name_, NAMELEN+1, "%s", name.c_str());
   if (i < 0 || i > NAMELEN+1) {
-    err.Error("Writing to name");
+    err->Error("Writing to name");
   }
   this->age_ = 0;
   memset(this->birth_, '-', BIRTHLEN);
@@ -24,13 +24,13 @@ Client::Client(std::string name) {
 }
 
 Client::~Client() {
-  delete tel_;
+  delete [] tel_;
 }
 
 void Client::set_name(std::string name) {
   int i = snprintf(this->name_, NAMELEN+1, "%s", name.c_str());
   if (i < 0 || i > NAMELEN+1) {
-    err.Error("Writing to name");
+    err->Error("Writing to name");
   }
 }
 
@@ -42,10 +42,10 @@ void Client::set_gender(std::string gender) {
   this->gender_[0] = gender[0];
 }
 
-void Client::set_birth(std::string birth) {
-  int i = snprintf(this->birth_, NAMELEN+1, "%s", birth.c_str());
+void Client::set_birth(const char *birth) {
+  int i = snprintf(this->birth_, NAMELEN+1, "%s", birth);
   if (i < 0 || i > NAMELEN+1) {
-    err.Error("Writing to name");
+    err->Error("Writing to birth");
   }
 }
 

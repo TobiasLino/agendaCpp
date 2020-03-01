@@ -8,6 +8,8 @@
 
 #include "phone.hpp"
 
+extern Errors *err;
+
 #define NAMELEN 30
 #define BIRTHLEN 10
 #define GENDERLEN 1
@@ -20,7 +22,7 @@ class Client {
 
   void set_name(std::string name);
   void set_age(int age);
-  void set_birth(std::string birth);
+  void set_birth(const char *birth);
   void set_gender(std::string gender);
   void set_phone(Phone *tel);
 
