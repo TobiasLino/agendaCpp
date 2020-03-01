@@ -86,7 +86,11 @@ int main(void) {
   std::cout << "Depois:\n";
   ag->Print();
 
-  ag->Remove(cli2->get_name());
+  // TODO : o sistema não consegue passar o parâmetro por valor, só encontra
+  //        algo quando o parâmetro é passado por referência.
+  Client *tmp = ag->FindIt(cli3->get_name());
+  std::cout << "\n";
+  tmp->Print();
 
   return 0;
 }

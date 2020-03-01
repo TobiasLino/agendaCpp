@@ -16,7 +16,17 @@ Agenda::~Agenda() {
   }
 }
 
-Client* Agenda::FindIt(const char *name) {}
+Client* Agenda::FindIt(const char *name) {
+  std::list<Client*>::iterator ref;
+  for (int i = 0; i < ALPHABETLEN; ++i) {
+    for (ref = agenda_[i]->begin(); ref != agenda_[i]->end(); ++ref) {
+      if ((*ref)->get_name() == name) {
+        return (*ref);
+      }
+    }
+  }
+  return nullptr;
+}
 
 void Agenda::Add(Client *cl) {
   int i = GetIndex(cl->get_name()[0]);
