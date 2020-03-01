@@ -78,7 +78,7 @@ char* Client::get_phone_number() {
 }
 
 void Client::Print() {
-  std::cout << std::setw(30) << std::setfill(' ')
+  std::cout << "|" << std::setw(30) << std::setfill(' ')
             << name_ << "|"
             << std::setw(5) << std::setfill(' ')
             << age_ << "|"

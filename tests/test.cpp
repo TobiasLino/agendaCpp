@@ -6,7 +6,7 @@
 
 int main(void) {
   Phone *tel = new Phone;
-/*
+
   tel->set_phone("12 996829353");
 
   Client cli;
@@ -16,11 +16,20 @@ int main(void) {
   cli.set_gender("Masculino");
   cli.set_phone(tel);
 
-  cli.Print();
-  */
+  Client *cli2 = new Client;
+  cli2->set_name("Ana Paula da Silva Lino");
+  cli2->set_age(37);
+  cli2->set_birth("20/01/1982");
+  cli2->set_gender("Feminino");
+
+  Phone *tel2 = new Phone("12 996262526");
+  cli2->set_phone(tel2);
+
 
   Menu m;
   m.ClientTableTitle();
+  cli.Print();
+  cli2->Print();
   return 0;
 }
 
