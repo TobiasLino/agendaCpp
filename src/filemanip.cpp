@@ -15,10 +15,14 @@ void FileManip::Sync(Agenda &agenda) {
   if (!file_) {
     report->Error("Opening File", true);
   }
-  int i = 0;
-  while (i <= agenda.Size()) {
-    if (fwrite(&agenda, sizeof(Agenda), 1, file_) < 1) {
-      report->Error("Writing to file", true);
+  Client *tmp;
+  for (int i = 0; i < ALPHABETLEN + 1; ++i) {
+    std::list<Client*> lst = agenda.GetList();
+    for (auto ref = lst.begin(); ref != lst.end(); ++ref) {
+      tmp = (*ref);
+      if (fwrite(&tmp, sizeof(Client()), 1, file_) < 1) {
+        report->Error("Writing to file", true);
+      }
     }
   }
   std::cout << "Success"

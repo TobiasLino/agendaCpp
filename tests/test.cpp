@@ -1,4 +1,4 @@
-// Copyright 2020 Tobias
+/*// Copyright 2020 Tobias
 
 #include "../include/agendacpp/phone.hpp"
 #include "../include/agendacpp/client.hpp"
@@ -95,3 +95,4 @@ int main(void) {
   return 0;
 }
 
+*/

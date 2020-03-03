@@ -5,10 +5,10 @@
 // Errors *err = new Errors;
 
 Client::Client() {
-  memset(this->name_, '-', NAMELEN);
+  memset(this->name_, ' ', NAMELEN);
   this->age_ = 0;
-  memset(this->birth_, '-', BIRTHLEN);
-  memset(this->gender_, '-', GENDERLEN);
+  memset(this->birth_, ' ', BIRTHLEN);
+  memset(this->gender_, ' ', GENDERLEN);
   this->tel_ = new Phone;
 }
 

@@ -27,16 +27,6 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="agendaCpp">
 				<Option output="/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/agendaCpp" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug"/>
@@ -83,11 +73,11 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="test">
+			<Target title="edit_cache">
 				<Option working_dir="/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>

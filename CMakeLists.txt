@@ -4,7 +4,7 @@ project(agendaCpp)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(
-        agendaCpp tests/test.cpp
+        agendaCpp tests/gooTest.cpp
         include/agendacpp/client.cpp
         include/agendacpp/phone.cpp
         include/agendacpp/errors.cpp
