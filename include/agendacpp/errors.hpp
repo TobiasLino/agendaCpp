@@ -10,6 +10,7 @@
 class Errors {
  public:
   void Error(const char *msg, bool half = false);
+  void Success(const char *msg);
 };
 
 
