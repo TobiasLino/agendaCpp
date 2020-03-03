@@ -22,6 +22,8 @@ TEST(FileManIpTest, WritingToFile) {
   ASSERT_NE(nullptr, cl1);
   ASSERT_NE(nullptr, cl2);
   ASSERT_NE(nullptr, cl3);
+
+  ASSERT_EQ(3, a->Size());
 }
 
 int main(int argc, char **argv) {
