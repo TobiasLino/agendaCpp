@@ -24,7 +24,7 @@ class Agenda {
   void Print();
   void PrintMale();
   void PrintFemale();
-  auto GetList(int index) -> decltype(auto);
+  std::list<Client*> *GetList(int index);
   bool Contains(Client *cl);
   static int GetIndex(const char ch);
 

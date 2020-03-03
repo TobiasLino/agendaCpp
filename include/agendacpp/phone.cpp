@@ -6,7 +6,7 @@ Errors *err = new Errors;
 
 
 Phone::Phone() {
-  strcpy(number_, "00000000");
+  strcpy(number_, "000 000 000000000");
 }
 Phone::Phone(std::string number) {
   int i = snprintf(this->number_, NUMBERLEN+1, "%s", number.c_str());

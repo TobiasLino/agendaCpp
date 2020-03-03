@@ -231,6 +231,33 @@ src/agenda.cpp.s:
 	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/src/agenda.cpp.s
 .PHONY : src/agenda.cpp.s
 
+src/filemanip.o: src/filemanip.cpp.o
+
+.PHONY : src/filemanip.o
+
+# target to build an object file
+src/filemanip.cpp.o:
+	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/src/filemanip.cpp.o
+.PHONY : src/filemanip.cpp.o
+
+src/filemanip.i: src/filemanip.cpp.i
+
+.PHONY : src/filemanip.i
+
+# target to preprocess a source file
+src/filemanip.cpp.i:
+	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/src/filemanip.cpp.i
+.PHONY : src/filemanip.cpp.i
+
+src/filemanip.s: src/filemanip.cpp.s
+
+.PHONY : src/filemanip.s
+
+# target to generate assembly for a file
+src/filemanip.cpp.s:
+	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/src/filemanip.cpp.s
+.PHONY : src/filemanip.cpp.s
+
 src/menu.o: src/menu.cpp.o
 
 .PHONY : src/menu.o
@@ -306,6 +333,9 @@ help:
 	@echo "... src/agenda.o"
 	@echo "... src/agenda.i"
 	@echo "... src/agenda.s"
+	@echo "... src/filemanip.o"
+	@echo "... src/filemanip.i"
+	@echo "... src/filemanip.s"
 	@echo "... src/menu.o"
 	@echo "... src/menu.i"
 	@echo "... src/menu.s"

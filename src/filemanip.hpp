@@ -20,10 +20,8 @@ class FileManip {
   void Clear();
 
  private:
-  FILE *file_;
-  const char* file_name_ = "agenda.dat";
-  const char* only_write_ = "ab";
-  const char* only_read_ = "rb";
+  std::string file_name_ = "agenda.dat";
+  std::fstream *fIO_;
 };
 
 

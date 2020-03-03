@@ -6,30 +6,41 @@
 
 Errors *report = new Errors;
 
-FileManip::FileManip() { }
-
-FileManip::~FileManip() {}
-
-void FileManip::Sync(Agenda &agenda) {
-  file_ = fopen(file_name_, only_write_);
-  if (!file_) {
-    report->Error("Opening File", true);
-  }
-  Client *tmp;
-  for (int i = 0; i < ALPHABETLEN + 1; ++i) {
-    std::list<Client*> lst = agenda.GetList();
-    for (auto ref = lst.begin(); ref != lst.end(); ++ref) {
-      tmp = (*ref);
-      if (fwrite(&tmp, sizeof(Client()), 1, file_) < 1) {
-        report->Error("Writing to file", true);
-      }
-    }
-  }
-  std::cout << "Success"
+FileManip::FileManip() {
+  this->fIO_ = new std::fstream();
 }
 
-void FileManip::Read(Agenda &agenda) {}
+FileManip::~FileManip() {
+  delete fIO_;
+}
+
+void FileManip::Sync(Agenda &agenda) {
+  fIO_->open(file_name_.c_str(), std::ios::ate | std::ios::out | std::ios::in);
+  if (!fIO_->is_open()) {
+    report->Error("Opening File.", true);
+  }
+  for (int i = 0; i < ALPHABETLEN + 1; ++i) {
+    std::list<Client*> *lst = agenda.GetList(i);
+    for (auto ref = lst->begin(); ref != lst->end(); ++ref) {
+      fIO_->write((char*)(*ref), sizeof(Client));
+    }
+  }
+}
+
+void FileManip::Read(Agenda &agenda) {
+  fIO_->seekg(0);
+  Client *tmp;
+
+  while (fIO_->read((char*)tmp, sizeof(Client))) {
+    tmp->Print();
+    agenda.Add(tmp);
+  }
+}
 
 void FileManip::Clear() {
-  system("rm " + file_name_);
+  /*
+  const char *clear_command = "rm ";
+  system(clear_command + file_name_);
+   */
+  system("rm agenda.dat");
 }

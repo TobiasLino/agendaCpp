@@ -19,6 +19,13 @@ CMakeFiles/agendaCpp.dir/src/agenda.cpp.o: ../include/agendacpp/phone.hpp
 CMakeFiles/agendaCpp.dir/src/agenda.cpp.o: ../src/agenda.cpp
 CMakeFiles/agendaCpp.dir/src/agenda.cpp.o: ../src/agenda.hpp
 
+CMakeFiles/agendaCpp.dir/src/filemanip.cpp.o: ../include/agendacpp/client.hpp
+CMakeFiles/agendaCpp.dir/src/filemanip.cpp.o: ../include/agendacpp/errors.hpp
+CMakeFiles/agendaCpp.dir/src/filemanip.cpp.o: ../include/agendacpp/phone.hpp
+CMakeFiles/agendaCpp.dir/src/filemanip.cpp.o: ../src/agenda.hpp
+CMakeFiles/agendaCpp.dir/src/filemanip.cpp.o: ../src/filemanip.cpp
+CMakeFiles/agendaCpp.dir/src/filemanip.cpp.o: ../src/filemanip.hpp
+
 CMakeFiles/agendaCpp.dir/src/menu.cpp.o: ../src/menu.cpp
 CMakeFiles/agendaCpp.dir/src/menu.cpp.o: ../src/menu.hpp
 

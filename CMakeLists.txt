@@ -14,6 +14,7 @@ add_executable(
         include/agendacpp/errors.cpp
         src/menu.cpp
         src/agenda.cpp
+        src/filemanip.cpp
 )
 
 target_link_libraries(${PROJECT_NAME} libgtest.a libgtest_main.a)

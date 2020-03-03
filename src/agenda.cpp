@@ -123,7 +123,7 @@ void Agenda::PrintFemale() {
 }
 
 
-auto Agenda::GetList(int index) -> decltype(auto) {
+std::list<Client*> *Agenda::GetList(int index) {
   return agenda_[index];
 }
 
