@@ -122,6 +122,11 @@ void Agenda::PrintFemale() {
   }
 }
 
+
+auto Agenda::GetList(int index) {
+  return agenda_[index];
+}
+
 bool Agenda::Contains(Client *cl) {
   bool tmp = false;
   for (int i = 0; i < ALPHABETLEN + 1; ++i) {
