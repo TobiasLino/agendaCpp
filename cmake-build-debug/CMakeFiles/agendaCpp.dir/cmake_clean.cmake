@@ -4,7 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/agendaCpp.dir/include/agendacpp/phone.cpp.o"
   "CMakeFiles/agendaCpp.dir/src/agenda.cpp.o"
   "CMakeFiles/agendaCpp.dir/src/menu.cpp.o"
-  "CMakeFiles/agendaCpp.dir/tests/test.cpp.o"
+  "CMakeFiles/agendaCpp.dir/tests/gooTest.cpp.o"
   "agendaCpp"
   "agendaCpp.pdb"
 )

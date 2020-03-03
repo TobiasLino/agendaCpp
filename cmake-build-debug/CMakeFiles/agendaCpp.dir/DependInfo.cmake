@@ -9,7 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/include/agendacpp/phone.cpp" "/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/CMakeFiles/agendaCpp.dir/include/agendacpp/phone.cpp.o"
   "/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/src/agenda.cpp" "/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/CMakeFiles/agendaCpp.dir/src/agenda.cpp.o"
   "/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/src/menu.cpp" "/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/CMakeFiles/agendaCpp.dir/src/menu.cpp.o"
-  "/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/tests/test.cpp" "/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/CMakeFiles/agendaCpp.dir/tests/test.cpp.o"
+  "/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/tests/gooTest.cpp" "/home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/CMakeFiles/agendaCpp.dir/tests/gooTest.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

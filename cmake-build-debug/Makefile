@@ -78,6 +78,17 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/snap/clion/103/bin/cmake/linux/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/CMakeFiles /home/tobias/Documentos/Faculdade/3o_semestre/PI/agendaCpp/cmake-build-debug/CMakeFiles/progress.marks
@@ -258,32 +269,32 @@ src/menu.cpp.s:
 	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/src/menu.cpp.s
 .PHONY : src/menu.cpp.s
 
-tests/test.o: tests/test.cpp.o
+tests/gooTest.o: tests/gooTest.cpp.o
 
-.PHONY : tests/test.o
+.PHONY : tests/gooTest.o
 
 # target to build an object file
-tests/test.cpp.o:
-	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/tests/test.cpp.o
-.PHONY : tests/test.cpp.o
+tests/gooTest.cpp.o:
+	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/tests/gooTest.cpp.o
+.PHONY : tests/gooTest.cpp.o
 
-tests/test.i: tests/test.cpp.i
+tests/gooTest.i: tests/gooTest.cpp.i
 
-.PHONY : tests/test.i
+.PHONY : tests/gooTest.i
 
 # target to preprocess a source file
-tests/test.cpp.i:
-	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/tests/test.cpp.i
-.PHONY : tests/test.cpp.i
+tests/gooTest.cpp.i:
+	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/tests/gooTest.cpp.i
+.PHONY : tests/gooTest.cpp.i
 
-tests/test.s: tests/test.cpp.s
+tests/gooTest.s: tests/gooTest.cpp.s
 
-.PHONY : tests/test.s
+.PHONY : tests/gooTest.s
 
 # target to generate assembly for a file
-tests/test.cpp.s:
-	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/tests/test.cpp.s
-.PHONY : tests/test.cpp.s
+tests/gooTest.cpp.s:
+	$(MAKE) -f CMakeFiles/agendaCpp.dir/build.make CMakeFiles/agendaCpp.dir/tests/gooTest.cpp.s
+.PHONY : tests/gooTest.cpp.s
 
 # Help Target
 help:
@@ -292,8 +303,9 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... agendaCpp"
 	@echo "... edit_cache"
+	@echo "... agendaCpp"
+	@echo "... test"
 	@echo "... include/agendacpp/client.o"
 	@echo "... include/agendacpp/client.i"
 	@echo "... include/agendacpp/client.s"
@@ -309,9 +321,9 @@ help:
 	@echo "... src/menu.o"
 	@echo "... src/menu.i"
 	@echo "... src/menu.s"
-	@echo "... tests/test.o"
-	@echo "... tests/test.i"
-	@echo "... tests/test.s"
+	@echo "... tests/gooTest.o"
+	@echo "... tests/gooTest.i"
+	@echo "... tests/gooTest.s"
 .PHONY : help
 
 
