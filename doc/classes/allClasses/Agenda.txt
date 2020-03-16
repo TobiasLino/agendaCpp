@@ -1,0 +1,63 @@
+//
+//  Tobias Lino 2020.
+//
+Classe Principal que mantém todos os clientes numa lista alfabética.
+
+public class Agenda {
+    // Vetor onde cada elemento contém uma lista com clientes cujo
+    // nome começa com a letra correspondente ao seu índice
+    // (A = 0, B = 1, ..., Z = 25) com +1 de segurança.
+    protected List<Client>[] agenda_;
+
+    // Define um tamanho fixo do vetor e inicializa cada elemento.
+    public Agenda();
+
+    // Retorna o cliente cujo nome seja igual ao parâmetro passado.
+    public Client findIt(String name);
+
+    // Adiciona o cliente na lista correspondente. Por segurança,
+    // a lista é reordenada evitando conflitos de nomes parecidos.
+    public void add(Client cliente);
+
+    // Remove um cliente pelo nome.
+    public void remove(String name);
+
+    // Remove um cliente passando o objeto.
+    public void remove(Client cliente);
+
+    // Retorna a quantidade de elementos presentes na agenda.
+    public int size();
+
+    // Imprime todos os clientes da lista no terminal.
+    public void print();
+
+    // Retorna a lista de clientes correspondente ao indíce (inicial
+    // do nome do cliente).
+    public List<Client> getClients(int index);
+
+    // Imprime apenas Clientes definidos como do gênero masculino.
+    public void printMale();
+
+    // Imprime apenas clientes definidos como do gênero feminino.
+    public void printFemale();
+
+    // Imprime apenas clientes definidos como de um gênero não binário.
+    public void printNotBinaries();
+
+    // Booleano que verifica se a agenda contém o cliente.
+    public boolean contains(Client cliente);
+
+    // Verifica se a agenda contém o cliente, pelo nome.
+    public boolean contains(String clientName);
+
+    // Retorna o índice correspondente a letra inicial da string passada
+    // como parâmetro.
+    public int getIndex(String str);
+
+    // Recupera os dados do arquivo.
+    public void recover() throws IOException, ParseException;
+
+    // Passa o conteúdo do Json para a agenda.
+    private void getJson(JSONObject jsonObject);
+}
+
